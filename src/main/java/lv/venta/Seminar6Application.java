@@ -8,6 +8,7 @@ import java.util.Arrays;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.CommandLinePropertySource;
 
 import lv.venta.model.Course;
@@ -60,8 +61,6 @@ public class Seminar6Application {
 				Grade g4 = new Grade(10,c2,st2); 
 				gradeRepo.saveAll(Arrays.asList(g1,g2,g3,g4));
 				
-				
-
 				
 			
 			}
