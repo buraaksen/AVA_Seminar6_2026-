@@ -37,4 +37,49 @@ public class Grade {
 	@JoinColumn(name = "Sid")
 	private Student student;
 	
+	
+	
+	
+	public int getGradeValue() {
+		return gradeValue;
+	}
+
+	public void setGradeValue(int gradeValue) {
+		this.gradeValue = gradeValue;
+	}
+
+	public Course getCourse() {
+		return course;
+	}
+
+	public void setCourse(Course course) {
+		this.course = course;
+	}
+
+	public Student getStudent() {
+		return student;
+	}
+
+	public void setStudent(Student student) {
+		this.student = student;
+	}
+
+	public int getGid() {
+		return gid;
+	}
+
+	public Grade() {
+		
+	}
+	
+	public Grade(int gradeValue, Course course, Student student) {
+		setGradeValue(gradeValue);
+		setCourse(course);
+		setStudent(student);
+
+	}
+	
+	public String toString() {
+		return "" + gradeValue + " (" + student.getName() + "" + student.getSurname()+ "), " +course.getTitle();
+	}
 }
